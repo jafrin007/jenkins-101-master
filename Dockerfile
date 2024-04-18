@@ -1,3 +1,5 @@
+FROM ubuntu:trusty
+RUN apt update && apt install -y build-essential
 FROM jenkins/jenkins:2.414.2-jdk11
 USER root
 RUN apt-get update && apt-get install -y lsb-release python3-pip
